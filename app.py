@@ -106,7 +106,7 @@ async function startCamera() {
     cameraStream = await navigator.mediaDevices.getUserMedia({video: true});
     document.getElementById('camera').srcObject = cameraStream;
     document.getElementById('cameraResult').textContent = 'الكاميرا تعمل على جهازك فقط.';
-    addLog('تم تشغيل الكاميرا بإذن المستخدم.');
+    addLog
   } catch (error) {
     document.getElementById('cameraResult').textContent = 'لم تعمل الكاميرا. تحقق من إذن المتصفح.';
     addLog('تعذر تشغيل الكاميرا.');
